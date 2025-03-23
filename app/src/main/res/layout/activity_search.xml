@@ -7,4 +7,68 @@
     android:layout_height="match_parent"
     tools:context=".SearchActivity">
 
+    <EditText
+        android:id="@+id/CityNameEdit"
+        android:layout_width="238dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:hint="City name"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/YearEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/YearEdit"
+        android:layout_width="238dp"
+        android:layout_height="71dp"
+        android:ems="10"
+        android:hint="Year (2011-2024)"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/CityNameEdit"
+        app:layout_constraintBottom_toTopOf="@id/SearchButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/SearchButton"
+        android:layout_width="137dp"
+        android:layout_height="63dp"
+        android:text="SEARCH INFO"
+        app:layout_constraintTop_toBottomOf="@id/YearEdit"
+        app:layout_constraintBottom_toTopOf="@id/StatusText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/StatusText"
+        android:layout_width="148dp"
+        android:layout_height="53dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/SearchButton"
+        app:layout_constraintBottom_toTopOf="@id/ListInfoActivityButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/ListInfoActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIEW DETAILS"
+        app:layout_constraintTop_toBottomOf="@id/StatusText"
+        app:layout_constraintBottom_toTopOf="@id/ReturnHomeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/ReturnHomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RETURN HOME"
+        app:layout_constraintTop_toBottomOf="@id/ListInfoActivityButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,4 +7,48 @@
     android:layout_height="match_parent"
     tools:context=".ListInfoActivity">
 
+    <TextView
+        android:id="@+id/CityText"
+        android:layout_width="144dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="96dp"
+        android:text="Helsinki"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/YearText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/YearText"
+        android:layout_width="106dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="48dp"
+        android:text="2012"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/CarInfoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/CarInfoText"
+        android:layout_width="243dp"
+        android:layout_height="203dp"
+        android:layout_marginBottom="348dp"
+        android:text="Data"
+        android:textColor="#D31616"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
