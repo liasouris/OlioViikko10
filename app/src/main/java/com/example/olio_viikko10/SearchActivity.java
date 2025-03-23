@@ -177,7 +177,7 @@ public class SearchActivity extends AppCompatActivity {
                 total += amount;
                 storage.addCarData(new CarData(types[i], amount));
             }
-            storage.addCarData(new CarData("Yhteensä", total));
+            storage.addCarData(new CarData("yhteensä", total));
 
             return true;
         } catch (Exception e) {
